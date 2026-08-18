@@ -5,6 +5,10 @@
 * Supply Personal Data Disclosure form. Refs STSMACOM-909.
 * `<ViewCustomFieldsRecord>` - render `DATE_PICKER` values in UTC so the displayed day matches the saved value in non-UTC timezones. Fixes STSMACOM-950.
 * `ViewCustomFieldsRecord` - make `calloutRef` available after the component is mounted to prevent a page crash when the section title fetch fails. Fixes STSMACOM-929.
+* `SearchAndSort` - Add pass through `actionMenuToggleProps` for `Pane`. Refs STSMACOM-959.
+* Update user addresses view to support empty state. Refs STSMACOM-960.
+* `EditCustomFieldsRecord` - apply word-breaking styles to all custom field types including RadioButtonGroup labels, Select/MultiSelect options, Checkbox labels, and validation messages. Refs STSMACOM-961.
+* Fixed the issue where the Last updated field erroneously displays Unknown user. Refs STSMACOM-962.
 
 ## 10.1.0 IN PROGRESS
 

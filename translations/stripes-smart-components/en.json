@@ -224,6 +224,7 @@
   "customFields.lookup.refEntityType.organization": "Organization",
   "customFields.lookup.refEntityType.user": "User",
   "customFields.lookup.refEntityType.instance": "Instance",
+  "customFields.lookup.refEntityType.locked": "Cannot be changed while the field is in use",
   "customFields.lookup.search.organization": "Organization look-up",
   "customFields.lookup.search.user": "User look-up",
   "customFields.lookup.search.instance": "Instance look-up",

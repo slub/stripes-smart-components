@@ -232,6 +232,7 @@
   "customFields.lookup.noPlugin": "Look-up is not available",
   "customFields.lookup.noPermission": "You do not have permission to view this record",
   "customFields.lookup.notFound": "Record not found ({id})",
+  "customFields.lookup.loadFailed": "Record could not be loaded ({id})",
   "customFields.lookup.unknownRefEntityType": "Unknown lookup source: {refEntityType}",
   "customFields.fieldLabel": "Field label",
   "customFields.fieldFormat": "Field format",

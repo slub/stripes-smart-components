@@ -75,6 +75,7 @@ export { default as NotesSmartAccordion } from './lib/Notes/NotesSmartAccordion'
 export { default as NotePopupModal } from './lib/Notes/NotePopupModal';
 export { default as ViewCustomFieldsSettings } from './lib/CustomFields/pages/ViewCustomFieldsSettings';
 export { default as EditCustomFieldsSettings } from './lib/CustomFields/pages/EditCustomFieldsSettings';
+export { default as CustomFieldSectionsSettings } from './lib/CustomFields/pages/CustomFieldSectionsSettings';
 export { default as EditCustomFieldsRecord } from './lib/CustomFields/pages/EditCustomFieldsRecord';
 export { default as ViewCustomFieldsRecord } from './lib/CustomFields/pages/ViewCustomFieldsRecord';
 export { default as useCustomFields } from './lib/CustomFields/utils/useCustomFields';

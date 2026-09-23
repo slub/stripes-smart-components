@@ -42,6 +42,7 @@ Name | type | description | required
 `scope` | string | used to use mod-settings API instead of mod-configuration                                  |false
 `hasDisplayInAccordionField` | boolean | used to display the `Display in accordion` field | false
 `displayInAccordionOptions` | array | a list of options `[{ value, label }]`, `value` is used to find the correct `label` and display it for the `Display in accordion` field | false
+`hasCustomFieldSections` | boolean | loads the custom field sections of the entity type (`/custom-field-sections`, `custom-fields` interface 3.2) and displays the `Section` a field is assigned to | false
 
 # EditCustomFieldsSettings
 `EditCustomFieldsSettings` provides the functionality to create, edit and delete custom fields for the provided entity type.
@@ -89,6 +90,7 @@ Name | type | description | required
 `scope` | string | used to use mod-settings API instead of mod-configuration                                  |false
 `hasDisplayInAccordionField` | boolean | used to display the `Display in accordion` field | false
 `displayInAccordionOptions` | array | a list of options `[{ value, label }]`, `value` is used to find the correct `label` and display it for the `Display in accordion` field | false
+`hasCustomFieldSections` | boolean | loads the custom field sections of the entity type (`/custom-field-sections`, `custom-fields` interface 3.2) and adds a `Section` select to each field, stored in the field's `sectionId` | false
 
 # ViewCustomFieldsRecord
 `ViewCustomFieldsRecord`'s responsibilities are basically fetching custom fields configuration data for displaying accordions with them.

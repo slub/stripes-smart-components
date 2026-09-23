@@ -128,6 +128,7 @@ Name | type | description | required | default
 `customFieldsValues` | object | values for the custom fields | false | {}
 `entityType` | string | used to filter custom files by particular entity type | true |
 `expanded` | boolean | accordion open or closed | true |
+`hasCustomFieldSections` | boolean | renders one more accordion per custom field section (`/custom-field-sections`) that has visible fields, with the id `<accordionId>-<section id>`; fields without a known `sectionId` stay in the default accordion. Meant for use inside an `AccordionSet` | false | false
 `isSectionTitleEnabled` | boolean | enables/disables fetching and displaying the section title | false | true
 `onToggle` | func | callback for toggling the accordion open/closed | true |
 `scope` | string | used to use mod-settings API instead of mod-configuration                                  |false
@@ -208,6 +209,7 @@ Name | type | description | required | default
 `entityType` | string | used to filter custom files by particular entity type |true
 `expanded` | boolean | indicates if the accordion is open | true |
 `fieldComponent` | func | Field component | true |
+`hasCustomFieldSections` | boolean | renders one more accordion per custom field section (`/custom-field-sections`) that has visible fields, with the id `<accordionId>-<section id>`; fields without a known `sectionId` stay in the default accordion. Meant for use inside an `AccordionSet` | false | false
 `isCreateMode` | boolean | indicates if the component is being used in create mode. When true, default values are set as initial values without marking the form dirty. When false, default values mark the form as dirty (edit mode behavior) | false | false
 `onComponentLoad` | func | callback function invoked when all form fields have been rendered | false |
 `onToggle` | func | callback for toggling the accordion open/closed | true |

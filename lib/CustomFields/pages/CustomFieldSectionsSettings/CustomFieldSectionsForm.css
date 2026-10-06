@@ -1,0 +1,36 @@
+@import '@folio/stripes-components/lib/variables';
+
+.content {
+  margin: 0 auto;
+  max-width: 63rem;
+}
+
+.header,
+.row {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(12rem, 30rem) 10rem 2.5rem;
+  column-gap: 1rem;
+  align-items: start;
+}
+
+.header {
+  font-weight: bold;
+  padding: 0 0 0.5rem;
+}
+
+.row {
+  background-color: var(--bg);
+  padding: 0.35rem 0;
+}
+
+.row--dragging {
+  background-color: var(--color-fill-hover);
+}
+
+.fieldsCount {
+  line-height: 2rem;
+}
+
+.addButton {
+  margin-top: 1rem;
+}

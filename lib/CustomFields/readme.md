@@ -42,7 +42,7 @@ Name | type | description | required
 `scope` | string | used to use mod-settings API instead of mod-configuration                                  |false
 `hasDisplayInAccordionField` | boolean | used to display the `Display in accordion` field | false
 `displayInAccordionOptions` | array | a list of options `[{ value, label }]`, `value` is used to find the correct `label` and display it for the `Display in accordion` field | false
-`hasCustomFieldSections` | boolean | loads the custom field sections of the entity type (`/custom-field-sections`, `custom-fields` interface 3.2) and displays the `Section` a field is assigned to | false
+`hasCustomFieldSections` | boolean | loads the custom field sections of the entity type (`/custom-field-sections`, `custom-fields` interface 3.2) and lists them in the `Display in accordion` field after the `displayInAccordionOptions` | false
 
 # EditCustomFieldsSettings
 `EditCustomFieldsSettings` provides the functionality to create, edit and delete custom fields for the provided entity type.
@@ -90,7 +90,7 @@ Name | type | description | required
 `scope` | string | used to use mod-settings API instead of mod-configuration                                  |false
 `hasDisplayInAccordionField` | boolean | used to display the `Display in accordion` field | false
 `displayInAccordionOptions` | array | a list of options `[{ value, label }]`, `value` is used to find the correct `label` and display it for the `Display in accordion` field | false
-`hasCustomFieldSections` | boolean | loads the custom field sections of the entity type (`/custom-field-sections`, `custom-fields` interface 3.2) and adds a `Section` select to each field, stored in the field's `sectionId` | false
+`hasCustomFieldSections` | boolean | loads the custom field sections of the entity type (`/custom-field-sections`, `custom-fields` interface 3.2) and lists them in the `Display in accordion` select after the `displayInAccordionOptions`; a chosen section is stored in the field's `sectionId`, a chosen host accordion in `displayInAccordion`, the other one is reset | false
 
 # ViewCustomFieldsRecord
 `ViewCustomFieldsRecord`'s responsibilities are basically fetching custom fields configuration data for displaying accordions with them.
@@ -129,6 +129,7 @@ Name | type | description | required | default
 `entityType` | string | used to filter custom files by particular entity type | true |
 `expanded` | boolean | accordion open or closed | true |
 `hasCustomFieldSections` | boolean | renders one more accordion per custom field section (`/custom-field-sections`) that has visible fields, with the id `<accordionId>-<section id>`; fields without a known `sectionId` stay in the default accordion. Meant for use inside an `AccordionSet` | false | false
+`displayInAccordionIds` | array | `displayInAccordion` values of the host accordions that embed their own instance (`sectionId` prop); fields assigned to one of them are left out of the default accordion | false | []
 `isSectionTitleEnabled` | boolean | enables/disables fetching and displaying the section title | false | true
 `onToggle` | func | callback for toggling the accordion open/closed | true |
 `scope` | string | used to use mod-settings API instead of mod-configuration                                  |false
@@ -210,6 +211,7 @@ Name | type | description | required | default
 `expanded` | boolean | indicates if the accordion is open | true |
 `fieldComponent` | func | Field component | true |
 `hasCustomFieldSections` | boolean | renders one more accordion per custom field section (`/custom-field-sections`) that has visible fields, with the id `<accordionId>-<section id>`; fields without a known `sectionId` stay in the default accordion. Meant for use inside an `AccordionSet` | false | false
+`displayInAccordionIds` | array | `displayInAccordion` values of the host accordions that embed their own instance (`sectionId` prop); fields assigned to one of them are left out of the default accordion | false | []
 `isCreateMode` | boolean | indicates if the component is being used in create mode. When true, default values are set as initial values without marking the form dirty. When false, default values mark the form as dirty (edit mode behavior) | false | false
 `onComponentLoad` | func | callback function invoked when all form fields have been rendered | false |
 `onToggle` | func | callback for toggling the accordion open/closed | true |

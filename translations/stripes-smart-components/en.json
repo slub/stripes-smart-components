@@ -268,6 +268,7 @@
   "customFields.sections.fieldsCount": "# of custom fields",
   "customFields.sections.empty": "There are no custom field sections",
   "customFields.sections.add": "Add section",
+  "customFields.displayInAccordion.systemAccordions": "System accordions",
   "customFields.sections.delete": "Delete section",
   "customFields.sections.dragDrop": "Change section order",
   "customFields.sections.save.inUse": "A section that is assigned to custom fields cannot be deleted.",

@@ -240,7 +240,7 @@
     "customFields.fieldTypes.RADIO_BUTTON": "Radiobutton gesetzt",
     "cddd.itemClaimedReturned": "Fälligkeitsänderung fehlgeschlagen: Exemplar ist angeblich zurückgegeben",
     "cddd.itemClaimedReturnedWarning": "Exemplar ist angeblich zurückgegeben",
-    "customFields.settings.accordionTitle": "Abschnittstitel",
+    "customFields.settings.accordionTitle": "Sektionstitel",
     "customFields.select.placeholder": "{fieldLabel} auswählen",
     "customFields.new": "Neu",
     "customFields.save&Close": "Speichern & schließen",
@@ -282,7 +282,7 @@
     "error.requestUrlLimit": "Zeichenlimit für die Such-URI-Anfrage wurde überschritten. Zeichenlimit ist {limit}. Bitte Such- und/oder Facettenauswahl überarbeiten.",
     "error.badRequest": "Suche für {query} konnte nicht verarbeitet werden. Bitte Anfrage überprüfen und erneut versuchen.",
     "dateRange.invalidYear": "Bitte ein gültiges Jahr eingeben",
-    "customFields.displayInAccordion": "Anzeige im Akkordeon",
+    "customFields.displayInAccordion": "Anzeige in Sektion",
     "customFields.warning.missingAttribute": "Feld {name} konnte nicht angezeigt werden, da ein erforderliches Attribut fehlt.",
     "customFields.error.get": "Unable to retrieve custom field data due to a module error. Please try again. If problem persists please contact your system administrator.",
     "customFields.sectionTitle.error.get": "Unable to retrieve section title due to a module error. Please try again. If problem persists please contact your system administrator."
